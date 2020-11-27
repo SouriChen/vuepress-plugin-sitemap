@@ -1,0 +1,27 @@
+{
+  "name": "vuepress-plugin-sitemap-tranhom",
+  "version": "1.0.2",
+  "description": "Sitemap generator plugin for vuepress",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SouriChen/vuepress-plugin-sitemap.git"
+  },
+  "keywords": [
+    "vuepress-plugin",
+    "vuepress",
+    "sitemap"
+  ],
+  "author": "risas",
+  "license": "ISC",
+  "dependencies": {
+    "sitemap": "^3.0.0"
+  },
+  "bugs": {
+    "url": "https://github.com/SouriChen/vuepress-plugin-sitemap/issues"
+  },
+  "homepage": "https://github.com/SouriChen/vuepress-plugin-sitemap#readme"
+}
