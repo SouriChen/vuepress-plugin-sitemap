@@ -69,19 +69,6 @@ module.exports = (options, context) => {
           ? dateFormatter(page.lastUpdated)
           : undefined
 
-        const { normalizedPath } = stripLocalePrefix(page.path, localeKeys)
-        const relatedLocales = localesByNormalizedPagePath.get(normalizedPath)
-
-        let links = []
-        if (relatedLocales.length > 1) {
-          links = relatedLocales.map(localePrefix => {
-            return {
-              lang: locales[localePrefix].lang,
-              url: withBase(normalizedPath.replace('/', localePrefix))
-            }
-          })
-        }
-
         if (page.frontmatter.meta && fmOpts.priority) {
             pagesMap.set(
             page.path,
@@ -89,7 +76,6 @@ module.exports = (options, context) => {
                 changefreq: fmOpts.changefreq || changefreq,
                 priority: fmOpts.priority,
                 lastmodISO,
-                links,
                 ...others
             }
             )

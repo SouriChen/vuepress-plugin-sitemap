@@ -1,6 +1,6 @@
 {
   "name": "vuepress-plugin-sitemap-tranhom",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Sitemap generator plugin for vuepress",
   "main": "index.js",
   "scripts": {
